@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>signup</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -16,7 +16,7 @@
     <div class="wrapper">
       <div class="section">
         <div class="container">
-          <div class="columns pt-5">
+          <div class="columns pt-2">
             <div class="column is-4 has-text-white">
               <div>
                 <div id="back-home" class="pb-6">
@@ -58,44 +58,76 @@
 
             <div class="column is-3"></div>
 
-            <div class="column is-5-tablet">
+            <div class="column is-5-tablet pb-6-hidden-tablet">
               <div class="card px-5" style="border-radius: 10px">
                 <div class="card-content">
                   <div class="pb-4 pt-2">
                     <!-- add emoji here -->
                     <p>
-                      <strong class="is-size-5">Welcome back:) </strong>
+                      <strong class="is-size-5">Welcome to Rumi:) </strong>
                     </p>
 
-                    <p class="has-text-grey-light pb-5">
-                      Rumi is a fun place to be.
+                    <p class="has-text-grey-light pb-2">
+                      Join the largest community of potential roommates
                     </p>
                   </div>
 
-                  <form id="login" action="#" method="post" class="pb-2">
-                    <div class="field pb-4">
+                  <form action="#" method="post">
+                    <div class="field is-grouped pb-2">
+                      <div class="control" style="width: 48%">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="First name"
+                        />
+                      </div>
+
+                      <div class="control" style="width: 48%">
+                        <input
+                          type="text"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="field pb-2">
                       <div class="control has-icons-left">
                         <input
                           class="input"
                           type="email"
                           placeholder="Email address"
                         />
-                        <span class="icon is-small is-left py-5">
+                        <span class="icon is-small is-left">
                           <i class="fas fa-envelope"></i>
                         </span>
                       </div>
                     </div>
 
-                    <div class="field pb-4">
+                    <div class="field pb-2">
                       <div class="control has-icons-left">
                         <input
                           type="password"
                           placeholder="Enter password"
                           class="input"
                         />
-                        <span class="icon is-small is-left py-5">
+                        <span class="icon is-small is-left">
                           <i class="fas fa-lock"></i>
                         </span>
+                      </div>
+                    </div>
+
+                    <div class="field is-grouped pb-2">
+                      <div class="control" style="width: 48%">
+                        <input class="input" type="text" placeholder="Status" />
+                      </div>
+
+                      <div class="control" style="width: 48%">
+                        <input
+                          type="text"
+                          placeholder="Refferal code"
+                          class="input"
+                        />
                       </div>
                     </div>
 
@@ -111,27 +143,32 @@
 
                     <div class="has-text-centered pb-4">
                       <button class="button is-link" style="width: 100%">
-                        Login
+                        Create my account
                       </button>
+                    </div>
+
+                    <div class="field">
+                      <div class="control is-size-7 has-text-centered">
+                        <label class="checkbox">
+                          <input type="checkbox" />
+                          I agree to the <a>terms & conditions </a>and<a
+                            href="#"
+                          >
+                            privacy policy</a
+                          >
+                        </label>
+                      </div>
                     </div>
                   </form>
 
                   <div class="has-text-centered pb-2">
-                    <p>
-                      <a href="#"
-                        ><strong class="has-text-info is-size-7-mobile"
-                          >Forgot Password?</strong
-                        ></a
-                      >
-                    </p>
-
                     <div class="split is-size-7">
                       <hr class="left" />
                       Or you can
                       <hr class="right" />
                     </div>
 
-                    <div id="login-gmail" class="has-text-centered pb-4">
+                    <div class="has-text-centered pb-4">
                       <button
                         class="button has-background-white-ter"
                         style="width: 100%"
@@ -139,12 +176,12 @@
                         <div class="icon">
                           <img src="icons/icons8-google (1).svg" alt="" />
                         </div>
-                        <strong> Login with Gmail</strong>
+                        <strong> Signup with Gmail</strong>
                       </button>
                     </div>
 
-                    <p class="pb-2 is-size-7-mobile">
-                      Don't have an account?
+                    <p class="pb-2 is-size-7">
+                      Already have an account?
                       <a href="#" class="has-text-info">Sign up here.</a>
                     </p>
                   </div>

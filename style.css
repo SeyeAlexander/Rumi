@@ -39,11 +39,16 @@ form input {
   top: 170px;
 }
 
+#login .input,
+#login .button,
+#login-gmail .button {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 form .input,
 .button {
   border-radius: 7px;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .split {
