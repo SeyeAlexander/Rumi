@@ -41,7 +41,8 @@ form input {
 
 #login .input,
 #login .button,
-#login-gmail .button {
+#login-gmail .button,
+.modal .button {
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -69,4 +70,55 @@ form .input,
 
 .right {
   float: right;
+}
+
+#modal-content-a {
+  border-radius: 15px;
+  width: 37%;
+  height: 80%;
+  padding-top: 140px;
+}
+
+.vecA img {
+  position: absolute;
+  width: 154.33px;
+  height: 165.29px;
+  left: 33%;
+  top: 30px;
+}
+
+#modal-content-b {
+  border-radius: 15px;
+  width: 37%;
+  height: 80%;
+  padding-top: 140px;
+}
+
+.vecB img {
+  position: absolute;
+  width: 154.33px;
+  height: 165.29px;
+  left: 33%;
+  top: 30px;
+}
+
+.vecC img {
+  position: absolute;
+  width: 123.79px;
+  left: -11px;
+  top: 430px;
+}
+
+.vecD img {
+  position: absolute;
+  width: 188.66px;
+  left: 33%;
+  top: 468px;
+}
+
+.vecE img {
+  position: absolute;
+  width: 123.79px;
+  right: 0px;
+  top: 430px;
 }

@@ -21,7 +21,7 @@
               <div>
                 <div id="back-home" class="pb-6">
                   <span class="icon">
-                    <img src="icons/icons8-back-to-128.png" />
+                    <img src="assets/icons8-back-to-128.png" />
                   </span>
 
                   <span class="ml-2">
@@ -39,26 +39,26 @@
 
               <div class="logo">
                 <span class="icon">
-                  <img src="icons/Rumi logo (1).svg" />
+                  <img src="assets/Rumi logo (1).svg" />
                 </span>
               </div>
 
               <div class="vector">
                 <span class="icon">
-                  <img src="icons/Rumi illustration 1.svg" />
+                  <img src="assets/Rumi illustration 1.svg" />
                 </span>
               </div>
 
               <div class="circles">
                 <span class="icon">
-                  <img src="icons/Circles.svg" />
+                  <img src="assets/Circles.svg" />
                 </span>
               </div>
             </div>
 
             <div class="column is-3"></div>
 
-            <div class="column is-5-tablet pb-6-hidden-tablet">
+            <div class="column is-5">
               <div class="card px-5" style="border-radius: 10px">
                 <div class="card-content">
                   <div class="pb-4 pt-2">
@@ -72,7 +72,7 @@
                     </p>
                   </div>
 
-                  <form action="#" method="post">
+                  <form>
                     <div class="field is-grouped pb-2">
                       <div class="control" style="width: 48%">
                         <input
@@ -142,7 +142,11 @@
                     -->
 
                     <div class="has-text-centered pb-4">
-                      <button class="button is-link" style="width: 100%">
+                      <button
+                        id="create-acct"
+                        class="button is-link"
+                        style="width: 100%"
+                      >
                         Create my account
                       </button>
                     </div>
@@ -151,7 +155,9 @@
                       <div class="control is-size-7 has-text-centered">
                         <label class="checkbox">
                           <input type="checkbox" />
-                          I agree to the <a>terms & conditions </a>and<a
+                          I agree to the
+                          <a class="has-text-info">terms & conditions </a>and<a
+                            class="has-text-info"
                             href="#"
                           >
                             privacy policy</a
@@ -170,11 +176,12 @@
 
                     <div class="has-text-centered pb-4">
                       <button
+                        id="signup-gmail"
                         class="button has-background-white-ter"
                         style="width: 100%"
                       >
                         <div class="icon">
-                          <img src="icons/icons8-google (1).svg" alt="" />
+                          <img src="assets/icons8-google (1).svg" alt="" />
                         </div>
                         <strong> Signup with Gmail</strong>
                       </button>
@@ -191,6 +198,97 @@
           </div>
         </div>
       </div>
+
+      <!--Modal & success messsage-->
+      <div id="modal-a" class="modal">
+        <div id="modal-background-a" class="modal-background"></div>
+        <div
+          id="modal-content-b"
+          class="modal-content has-text-centered has-background-white px-6"
+        >
+          <div class="vecA">
+            <span class="icon">
+              <img src="assets/Group 512.svg" />
+            </span>
+          </div>
+
+          <p class="pb-4 pt-6 is-size-4">
+            <strong>Yay! Account Created</strong>
+          </p>
+
+          <p class="pb-4">
+            Congratulations in completing the first step in creating your Rumi
+            account, we just sent you a confirmation mail.
+          </p>
+
+          <p class="is-size-7 pb-2">
+            Didn't recieve any mail,
+            <a href="" class="has-text-info">click here to resend</a>
+          </p>
+
+          <div class="split is-size-7">
+            <hr class="left" />
+            Or you can
+            <hr class="right" />
+          </div>
+
+          <button id="create-acct" class="button is-link" style="width: 100%">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!--end of Modal & success messsage-->
+
+      <!--Modal & error messsage-->
+      <div id="modal-b" class="modal">
+        <div id="modal-background-b" class="modal-background"></div>
+        <div
+          id="modal-content-b"
+          class="modal-content has-text-centered has-background-white px-6"
+        >
+          <div class="vecB">
+            <span class="icon">
+              <img src="assets/Illustration.svg" />
+            </span>
+          </div>
+
+          <p class="pb-3 pt-5 is-size-4"><strong>Oopps!</strong></p>
+
+          <p class="pb-6 px-4">
+            Seems there's already an account registered with this email address.
+            Try logging in instead.
+          </p>
+
+          <button id="create-acct" class="button is-link" style="width: 80%">
+            Login
+          </button>
+
+          <p class="is-size-7 pt-4">
+            <a href="#" class="has-text-info">Use a different Email</a>
+          </p>
+
+          <div class="vecC">
+            <span class="icon">
+              <img src="assets/Magnifier (1).svg" />
+            </span>
+          </div>
+
+          <div class="vecD">
+            <span class="icon">
+              <img src="assets/Magnifier (2).svg" />
+            </span>
+          </div>
+
+          <div class="vecE">
+            <span class="icon">
+              <img src="assets/Magnifier.svg" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--end of Modal & error messsage-->
     </div>
+
+    <script src="modal.js"></script>
   </body>
 </html>
