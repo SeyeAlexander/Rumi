@@ -1,0 +1,90 @@
+.wrapper,
+.navbar {
+  background: #f4f4f4;
+}
+
+.burger a {
+  color: #8a8a8a;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 450;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: 0.1s ease;
+  transition-delay: 0.1s;
+}
+
+.burger a:hover {
+  cursor: pointer;
+  font-size: 0.98em;
+  font-weight: 450;
+  color: #223266;
+  border-bottom: 2px solid rgb(36, 37, 46);
+}
+
+.circles img {
+  position: absolute;
+  left: 440px;
+  top: 0px;
+  width: 51em;
+}
+
+p strong {
+  line-height: 1.2em;
+}
+
+.circles-b img {
+  position: absolute;
+  left: 35em;
+  top: 49em;
+  width: 15em;
+}
+
+.circles-c img {
+  position: absolute;
+  left: 9em;
+  top: 43.5em;
+  width: 13em;
+}
+
+p,
+span,
+strong {
+  color: #022b69;
+}
+
+.circles-d img {
+  position: absolute;
+  left: 35em;
+  top: 94em;
+  width: 15em;
+}
+
+.circles-e img {
+  position: absolute;
+  left: 9em;
+  top: 102em;
+  width: 13em;
+}
+
+.footer a,
+.footer strong {
+  color: white;
+}
+
+.footer {
+  background: #162550;
+}
+
+/* .blob-a img {
+  position: absolute;
+  left: 0em;
+  top: 136em;
+}
+
+.blob-b img {
+  position: absolute;
+  left: 0em;
+  top: 177em;
+}
+*/
